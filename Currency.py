@@ -1,6 +1,8 @@
+import os
+
 import requests
 
-API_KEY = 'fca_live_irodg8jmsx7wWBNJwZY1evWszgcWXV4lOiatBuxS'
+API_KEY = os.environ["FREECURRENCY_API_KEY"]
 BASE_URL = f"https://api.freecurrencyapi.com/v1/latest?apikey={API_KEY}"
 
 CURRENCIES = ["USD", "EUR", "CAD", "ZAR", "CNY", "AUD"]
